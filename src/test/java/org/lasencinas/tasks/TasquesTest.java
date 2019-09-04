@@ -24,6 +24,12 @@ public class TasquesTest {
     }
 
     @Test
+    public void checkTypeTest() {
+        assertTrue(programadorTasques instanceof Tasques);
+        assertTrue(programadorTasquesVeh instanceof Tasques);
+    }
+
+    @Test
     public void setTascaTest() {
         programadorTasques.setTasca(new Autenticacio());
         tasques.add(new Autenticacio());

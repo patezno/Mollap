@@ -18,6 +18,11 @@ public class ClientTest {
     }
 
     @Test
+    public void checkTypeTest() {
+        assertTrue(mollapp instanceof Client);
+    }
+
+    @Test
     public void setProgramadorTasquesTest() {
         mollapp.setProgramadorTasques(programadorTasques);
         assertNotNull(mollapp.getProgramadorTasques());
