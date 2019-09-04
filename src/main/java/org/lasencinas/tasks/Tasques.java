@@ -8,8 +8,12 @@ import java.util.List;
 
 public class Tasques {
 
+    // Atributos
+
     private List<Filtre> tasques = new ArrayList<>();
     private Target target = null;
+
+    // Constructores
 
     public Tasques() {
 
@@ -18,6 +22,8 @@ public class Tasques {
     public Tasques(Target target) {
         this.target = target;
     }
+
+    // Getters y Setters
 
     public Target getTarget() {
         return target;
@@ -31,10 +37,16 @@ public class Tasques {
         return tasques;
     }
 
+    // Métodos
+
     public void afegirTasca(Filtre tasca) {
         getTasques().add(tasca);
     }
 
     public void execucio(String message) {
+        for (Filtre filtre : tasques) {
+            filtre.execucio(message);
+        }
+        getTarget().execucio(message);
     }
 }

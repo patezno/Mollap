@@ -26,5 +26,6 @@ public class ProgramadorTasques extends Tasques {
     }
 
     public void executarTasques(String message) {
+        execucio(message);
     }
 }

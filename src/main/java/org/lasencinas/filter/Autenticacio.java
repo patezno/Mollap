@@ -8,6 +8,6 @@ public class Autenticacio implements Filtre {
 
     @Override
     public void execucio(String message) {
-
+        System.out.println("Autenticación OK para " + message);
     }
 }
