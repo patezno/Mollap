@@ -22,5 +22,9 @@ public class ProgramadorTasques extends Tasques {
     // Métodos
 
     public void setTasca(Filtre filtre) {
+        afegirTasca(filtre);
+    }
+
+    public void executarTasques(String message) {
     }
 }

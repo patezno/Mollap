@@ -32,6 +32,7 @@ public class Tasques {
     }
 
     public void afegirTasca(Filtre tasca) {
+        getTasques().add(tasca);
     }
 
     public void execucio(String message) {
