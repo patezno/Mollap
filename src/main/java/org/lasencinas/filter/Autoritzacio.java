@@ -1,4 +1,4 @@
 package org.lasencinas.filter;
 
-public class Autoritzacio {
+public class Autoritzacio implements Filtre {
 }

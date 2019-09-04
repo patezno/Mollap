@@ -4,7 +4,7 @@ import org.lasencinas.client.Mollapp;
 import org.lasencinas.filter.Autenticacio;
 import org.lasencinas.filter.Autoritzacio;
 import org.lasencinas.tasks.ProgramadorTasques;
-import org.lasencinas.tasks.Vehicle;
+import org.lasencinas.target.Vehicle;
 
 public final class App {
     public static void main(String[] args) {
